@@ -1,0 +1,245 @@
+
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.item{
+    padding-left: 20px;
+    position: relative;
+    width: calc(20% - 40px);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#rating{
+    z-index: 5;
+    position: absolute;
+    top: 30px; /* Расположение сверху */
+    left: 30px; /* Расположение слева */
+    background-color: rgb(255, 196, 0);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /* Закругляем углы для круга */
+    display: flex; /* Используем flexbox для центрирования */
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+    color: white; /* Цвет текста */
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'PT Sans';
+}
+
+.image{
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+}
+.gens{
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    font-family: 'PT Sans';
+    text-decoration: none;
+}
+
+h5{
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    font-family: 'PT Sans';
+}
+
+.poster{
+    height: 360px;
+    width: 240px;
+}
+
+.texts{
+    height: 118px;
+    width: 240px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 4;
+    top: 300px;
+}
+
+.name{
+    margin: 0;
+    font-family: 'PT Sans';
+    font-size: 24px;
+}
+
+.link{
+    margin: 0;
+    font-family: 'PT Sans';
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Или используйте contain, если хотите, чтобы изображение помещалось целиком */
+    background-attachment: fixed; /* Делает фон статичным */
+    height: 100vh; /* Убедитесь, что у body есть высота */
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: first baseline;
+}
+
+.search{
+    font-size: 40px;
+    padding-left: 10px;
+    color: white;
+    font-family: 'PT Sans';
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#search{
+    padding-left: 100px;
+}
+
+.menu {
+    background-color: rgb(0, 0, 0);
+    height: 100%; /* Задаем высоту 100% для заполнения всей высоты окна */
+    width: 360px; /* Ширина вашего дива */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Выравнивание по верхнему краю */
+    left: 0; /* Выравнивание по левому краю */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 20px; /* Добавляем внутренние отступы, если нужно */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Добавляем тень для визуального эффекта */
+    z-index: 1000; /* Убедитесь, что меню выше других элементов */
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-left: 450px; /* Убираем место для меню */
+    padding: 20px; /* Добавляем отступы для содержимого */
+}
+
+.acc{
+    height: 60px;
+    width: 60px;
+    background-color: #fc6f11;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.person{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.persn{
+    color: white;
+    font-family: 'PT Sans';
+    font-size: 32px;
+}
+
+#nav{
+    color: white;
+    font-family: 'PT Sans';
+    font-size: 32px;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.genres{
+    height: 50px;
+    width: 200px;
+    background-color: #fc6f11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.assistant{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.as{
+    height: 60px;
+    width: 60px;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#help{
+    color: #E5E5E5;
+    font-family: 'PT Sans';
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    background-color: #F00699;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 100px;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-family: 'PT Sans';
+    font-size: 30px;
+}
+
+.company{
+    font-family: 'Bitter';
+    font-size: 96px;
+    font-weight: 1000;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(fonts/PTSans-Regular.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url(fonts/Bitter-VariableFont_wght.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+}
